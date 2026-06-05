@@ -28,6 +28,12 @@ spring:
     user: wallet_user
     password: Wallet2002!strong
 
+    # JWT Configuration
+    app:
+      jwt:
+        secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+        expiration-ms: 86400000
+
 server:
   port: 8080
 
@@ -37,3 +43,4 @@ logging:
     com.kabobi.wallet: DEBUG
     org.hibernate.SQL: DEBUG
     org.flywaydb: DEBUG
+    org.springframework.security: DEBUG

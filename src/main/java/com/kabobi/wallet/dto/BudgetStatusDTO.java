@@ -1,25 +1,19 @@
 package com.kabobi.wallet.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BudgetAlertDTO {
+public class BudgetStatusDTO {
 
     private Long budgetId;
-    private String alertType; // "WARNING", "CRITICAL", "EXCEEDED"
-    private String message;
     private BigDecimal budgetAmount;
     private BigDecimal spentAmount;
     private BigDecimal remainingAmount;
     private Double percentageUsed;
-    private String categoryName; // null si budget global
-    private LocalDateTime alertDate;
+    private String status; // "OK", "WARNING", "CRITICAL", "EXCEEDED"
 }
