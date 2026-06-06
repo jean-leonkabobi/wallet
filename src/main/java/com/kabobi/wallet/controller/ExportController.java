@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/export")
-@CrossOrigin("*")
 public class ExportController {
 
     @Autowired

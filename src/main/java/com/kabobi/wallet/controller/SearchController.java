@@ -11,7 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/search")
-@CrossOrigin("*")
 public class SearchController {
 
     @Autowired
